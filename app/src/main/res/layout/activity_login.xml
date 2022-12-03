@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@drawable/colorgradient2"
+    tools:context=".LoginActivity">
+
+        <TextView
+            android:id="@+id/loginview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="@dimen/padding_16"
+            android:background="@drawable/edittext"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="38dp"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp">
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/email_layout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_16"
+                app:mtf_cardCollapsedHeight="1dp"
+                app:mtf_image="@drawable/ic_baseline_email_24"
+                app:mtf_labelColor="#FFF">
+
+                <EditText
+                    android:id="@+id/user_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email..."
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textColor="#000"
+                    android:textColorHint="#ffff"></EditText>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/password_layout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_layout"
+                android:drawablePadding="@dimen/padding_16"
+                app:mtf_cardCollapsedHeight="1dp"
+                app:mtf_image="@drawable/ic_baseline_vpn_lock_24"
+                app:mtf_labelColor="#FFF">
+
+                <EditText
+                    android:id="@+id/user_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your password..."
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:textColor="#000"
+                    android:textColorHint="#ffff"></EditText>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <TextView
+                android:id="@+id/forget_pass"
+                style="@style/fornts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:enabled="true"
+                android:onClick="forget"
+                android:text="Forget password"></TextView>
+
+            <Button
+                android:id="@+id/login_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forget_pass"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_round"
+                android:gravity="center"
+                android:text="Login "></Button>
+
+            <TextView
+                android:id="@+id/registration"
+                style="@style/fornts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_Button"
+                android:layout_alignParentRight="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:enabled="true"
+                android:onClick="registration"
+                android:text="Don't have account? Register here."></TextView>
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

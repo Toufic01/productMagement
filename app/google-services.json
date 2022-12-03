@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "56220268306",
+    "firebase_url": "https://productmanagement-20623-default-rtdb.firebaseio.com",
+    "project_id": "productmanagement-20623",
+    "storage_bucket": "productmanagement-20623.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56220268306:android:6d865a19517ba0da3ce5cb",
+        "android_client_info": {
+          "package_name": "com.mess.management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56220268306-q1945des1opkproipduj1v8n7icl3j6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Qo-aTfkmMmUzmZtJ61MHEZcQl68LsIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56220268306-q1945des1opkproipduj1v8n7icl3j6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
